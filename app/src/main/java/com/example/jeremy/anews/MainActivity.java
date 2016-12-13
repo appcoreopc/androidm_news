@@ -8,12 +8,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.GetChars;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.FrameLayout;
 
-public class MainActivity extends AppCompatActivity implements Profile.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements
+        Profile.OnFragmentInteractionListener, GetStarted.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,12 +49,13 @@ public class MainActivity extends AppCompatActivity implements Profile.OnFragmen
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-
             return true;
         }
         else if (id == R.id.action_user) {
             loadFragment(Profile.newInstance("", ""));
-
+        }
+        else if (id == R.id.action_search) {
+            loadFragment(GetStarted.newInstance("", ""));
         }
 
         return super.onOptionsItemSelected(item);
@@ -67,8 +69,6 @@ public class MainActivity extends AppCompatActivity implements Profile.OnFragmen
     private void loadFragment(Fragment fragment)
     {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.add(R.id.frame, fragment).commit();
-
+        transaction.replace(R.id.frame, fragment).commit();
     }
-
 }

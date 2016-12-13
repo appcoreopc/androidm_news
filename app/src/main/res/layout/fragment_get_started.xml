@@ -1,4 +1,5 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -36,31 +37,13 @@
             android:paddingBottom="24dp">
 
 
-            <ImageView
-                android:id="@+id/add_friend"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_toLeftOf="@+id/drop_down_option_menu"
-                android:src="@drawable/ic_action_action_settings" />
-
-            <ImageView
-                android:id="@+id/drop_down_option_menu"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/ic_action_action_search" />
-
             <TextView
                 android:id="@+id/user_profile_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="76dp"
-                android:text="Jeremy Woo"
+                android:text="Get your daily updates"
                 android:textColor="#fff"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -72,7 +55,7 @@
                 android:layout_below="@+id/user_profile_name"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="12dp"
-                android:text="Developer"
+                android:text="real time and free"
                 android:textColor="#fff"
                 android:textSize="14sp" />
         </RelativeLayout>
@@ -84,14 +67,13 @@
             android:layout_marginTop="5dp"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="#fff"
-                android:clickable="true"
-                android:padding="20dp"
-                android:text="Android#C#Game" />
+            <Button android:text="Get started"
+                android:layout_gravity="center"
+                android:id="@+id/getStarted" android:layout_height="wrap_content" android:layout_width="wrap_content"
+                android:layout_marginTop="50dp">
+            </Button>
+
+
 
         </LinearLayout>
     </RelativeLayout>

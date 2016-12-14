@@ -135,13 +135,13 @@ public class NewsFragment extends Fragment {
 
     private void createDummyNews()
     {
-        news.add(new News("Why Trump's State pick is so controversial", "", ""));
-        news.add(new News("Kanye West goes to Trump Tower", "", ""));
-        news.add(new News("Governor cries on blasphemy trial first day", "", ""));
-        news.add(new News("Protests erupt over 20-year austerity plan", "", ""));
-        news.add(new News("Report: Military set fire to towns in Myanmar", "", ""));
-        news.add(new News("Trump rewrites US foreign policy", "", ""));
-        news.add(new News("Gates, Rice pushed for ExxonMobil exec", "", ""));
+        news.add(new News("Why Trump's State pick is so controversial", "Why Trump's State pick is so controversialWhy Trump's State pick is so controversial", ""));
+        news.add(new News("Kanye West goes to Trump Tower", "Why Trump's State pick is so controversialWhy Trump's State pick is so controversialWhy Trump's State pick is so controversial", ""));
+        news.add(new News("Governor cries on blasphemy trial first day", "Why Trump's State pick is so controversialWhy Trump's State pick is so controversialWhy Trump's State pick is so controversial", ""));
+        news.add(new News("Protests erupt over 20-year austerity plan", "Why Trump's State pick is so controversialWhy Trump's State pick is so controversialWhy Trump's State pick is so controversialWhy Trump's State pick is so controversial", ""));
+        news.add(new News("Report: Military set fire to towns in Myanmar", "Why Trump's State pick is so controversialWhy Trump's State pick is so controversialWhy Trump's State pick is so controversial", ""));
+        news.add(new News("Trump rewrites US foreign policy", "Why Trump's State pick is so controversialWhy Trump's State pick is so controversialWhy Trump's State pick is so controversial", ""));
+        news.add(new News("Gates, Rice pushed for ExxonMobil exec", "Why Trump's State pick is so controversialWhy Trump's State pick is so controversialWhy Trump's State pick is so controversialWhy Trump's State pick is so controversial", ""));
     }
 
 }
